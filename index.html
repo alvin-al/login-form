@@ -17,20 +17,29 @@
         <img src="build/img/background.jpeg" alt="" class="lg:w-full lg:h-full">
     </div>
 
+    
+
     <div id="container" class="p-5 lg:absolute lg:bg-white lg:p-12 lg:right-1 lg:translate-x-[-25%] lg:top-1 lg:translate-y-[25%]">
         <div id="title">
             <h1 class="font-spacegrotesk text-5xl font-semibold mb-2">Login to your account</h1>
             <p class="font-jost text-lg mb-24">Keep your data saved</p>
         </div>
-        <form class="mb-6"  >
+
+        <div>
+            <div id="wrong" class="">
+            </div>  
+        </div>
+
+
+        <form class="mb-6" >
             <h3 class="font-spacegrotesk text-xl">Email</h3>
-            <input type="email" placeholder="name@gmail.com" required class="h-[50px] w-full p-4 bg-zinc-200 placeholder:text-gray-400 rounded mb-2 font-jost text-lg">
+            <input type="email" placeholder="name@gmail.com" id="email" required class="h-[50px] w-full p-4 bg-zinc-200 placeholder:text-gray-400 rounded mb-2 font-jost text-lg">
 
             <h3 class="font-spacegrotesk text-xl">Password</h3>
-            <input type="password" placeholder="************" name="" id="" required class="h-[50px] w-full p-4 bg-zinc-200 placeholder:text-gray-400 rounded mb-1">
+            <input type="password" placeholder="************" name="" id="password" required class="h-[50px] w-full p-4 bg-zinc-200 placeholder:text-gray-400 rounded mb-1">
 
             <a href="#" class="font-jost text-lg text-[#85B3C3]">Forget password?</a>
-            <input type="submit" value="Login" class="h-[50px] w-full bg-[#6BB1C9] rounded font-jost font-semibold text-lg text-white mt-2">
+            <input type="submit" onclick="authenticate()" value="Login" class="h-[50px] w-full bg-[#6BB1C9] rounded font-jost font-semibold text-lg text-white mt-2 cursor-pointer">
         </form>
 
         <div id="social-media" class="flex">
@@ -50,6 +59,6 @@
     </div>
 
 
-    <script src="/src/script.js"></script>
+    <script src="build/js/script.js"></script>
 </body>
 </html>

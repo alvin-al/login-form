@@ -1,0 +1,18 @@
+const wrongAccountDetail = document.getElementById('wrong');
+const wrongCaption = '<p class="text-red-500 mb-2 font-jost font-medium">ⓘ Wrong email or password!</p>';
+
+authenticate = () =>{
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+
+
+
+    if (email == 'alvin@gmail.com' && password == "123456"){
+        alert('masok');
+    } else {
+        wrongAccountDetail.innerHTML = wrongCaption;
+    }
+
+};
+
